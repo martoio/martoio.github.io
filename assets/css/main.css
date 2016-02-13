@@ -14,11 +14,46 @@ header {
  * Slider CSS Temporary!
  */
 div#slider{
-	height: 484px;
+	height: 600px;
 }
 div#slider .slider-image{
 	height: inherit;
+	width: 100%;
 	background: url('../img/slider/CarBurnout.jpg') no-repeat center center;
-	background-size: cover;
+	background-size: cover;	
+	display: none;
+}
 
+div#slider .slider-image.active {
+	display: block;
+}
+
+.slider-buttons {
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	width: 30px;
+}
+
+.slider-buttons .slider-button {
+	width: 15px;
+	height: 15px;
+	background: #00b788;
+	border-radius: 50%;
+	transition: background 0.4s ease;
+	display: inline;
+	float: left;
+	margin-right: 24px;	
+}
+
+.slider-buttons .slider-button.active {
+	background: black;
+}
+.slider-buttons .slider-button:last-child {
+	margin-right: 0;
+}
+
+
+.slider-buttons .slider-button:hover:not(.active) {
+	background: #ffe852;
 }
