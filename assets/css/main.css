@@ -1,0 +1,24 @@
+#logo img{
+	height: 90px;
+	margin: 5px 15px;
+}
+
+header {
+	background: #00b788;
+	height: 100px;
+}
+
+
+
+/**
+ * Slider CSS Temporary!
+ */
+div#slider{
+	height: 484px;
+}
+div#slider .slider-image{
+	height: inherit;
+	background: url('../img/slider/CarBurnout.jpg') no-repeat center center;
+	background-size: cover;
+
+}
