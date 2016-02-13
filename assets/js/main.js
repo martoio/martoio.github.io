@@ -7,6 +7,8 @@ $(document).ready(function() {
 	var buttonsMargin = 24;
 	var sliderWidth = $('#slider').width();
 	var buttonsLeftPos = (sliderWidth - numImages*(buttonsMargin+buttonsWidth))/2;
+	$('#slider-container').width(numImages*sliderWidth);
+	$('.slider-image').width(sliderWidth);
 	
 	for (var i = 0; i < numImages; i++) {
 		if(images[i].classList.contains('active')) {
@@ -22,7 +24,9 @@ $(document).ready(function() {
 	$('.slider-buttons').css({"left": buttonsLeftPos, "width": numImages*(buttonsWidth+buttonsMargin)-buttonsMargin});
 
 	$('.slider-button:not(.active)').on('click', function() {
-		alert('Sa tuka trqbva da slide-va, ma dneska nqmah vreme :D');
+		var selectedImage = $(this).attr('position');
+		$('.slider-image.active').removeClass('active');
+
 	});
 	
 
