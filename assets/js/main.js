@@ -21,6 +21,9 @@ $(document).ready(function() {
 	
 	$('.slider-buttons').css({"left": buttonsLeftPos, "width": numImages*(buttonsWidth+buttonsMargin)-buttonsMargin});
 
+	$('.slider-button:not(.active)').on('click', function() {
+		alert('Sa tuka trqbva da slide-va, ma dneska nqmah vreme :D');
+	});
 	
 
 
